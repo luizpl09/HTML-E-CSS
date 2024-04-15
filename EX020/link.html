@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+          color: red; 
+          text-decoration: none; 
+        }
+        a:visited{
+            color: rgb(0, 26, 255);
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .espesial{
+            background-color: rgb(0, 255, 255);
+        }
+        .espesial::before{
+            content:'⇏';
+        }
+        .espesial::after{
+            content:'⇍';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalisando Links</h1>
+    <li><a href="https://www.kwai.com/pt-BR">kawii</a></li>
+    <li><a href="https://www.youtube.com/watch?v=gqrySQQzvvQ" class="espesial">youtuber</a></li>
+    <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/modulos/capitulo-15-aula-04-pseudo-elementos-em-css/">curso em video</a></li>
+      
+</body>
+</html>
