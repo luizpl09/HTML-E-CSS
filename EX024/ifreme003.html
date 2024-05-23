@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso do iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        iframe#tela{
+            width: 95%;
+            height: 400px;
+            border: 2px solid black;
+        }
+        a{
+            text-decoration: none;
+            color: lightseagreen;
+            font-weight: bold;
+        }
+        a:hover{
+            background-color: lightgrey;
+            border-radius: 10px;
+            padding: 4px;
+            transition-duration: .4s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aliquid officia voluptatem totam? Cum, cumque magnam minima et excepturi porro eligendi sed impedit voluptatibus, vel dicta provident, optio modi! Molestiae.</p>
+
+    <ul>
+        <li><a href="PaginasExtras/pag001.html" target="frame">Primeira Página</a></li>
+        <li><a href="PaginasExtras/pag002.html" target="frame">Segunda Página</a></li>
+        <li><a href="PaginasExtras/pag003.html" target="frame">Terceira Página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quam numquam a molestias corporis, officia architecto minus eligendi rem consectetur voluptate iste similique necessitatibus ea, esse mollitia sequi asperiores perspiciatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi omnis fugit, illum suscipit sed enim, quam perferendis voluptatibus, labore explicabo ut facere consectetur. Exercitationem alias repudiandae cum a eligendi quia.</p>
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opiçães a sima</h1><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem omnis officia commodi ab, cumque sunt eum ratione similique sit sint nulla facere. Amet aspernatur, expedita excepturi in voluptatibus nam vero.</p><img src='img/luizpl09.jpeg'>">
+        <p>Infelizmente seu Navegador não e Compativel com isso</p>
+    </iframe>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, amet. Eos blanditiis, dolorum est facere aspernatur provident consequatur, quo eius non deserunt voluptatum praesentium adipisci molestias sunt accusamus totam quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure eos non ipsum autem maxime commodi repellat, dolorum totam. Assumenda itaque perspiciatis ipsam odio vel eum aperiam tempore dignissimos? Eveniet, vel?</p>
+</body>
+</html>
