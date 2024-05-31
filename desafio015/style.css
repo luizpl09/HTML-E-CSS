@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-size: cover;
+    background: black url(imagens/fundo-madeira.jpg) center center no-repeat fixed;
+}
