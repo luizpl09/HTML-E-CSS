@@ -2,3 +2,107 @@
 
 /* todas as demais midias */
 
+/* Typical Device Breakpoints 
+-----------------------------
+Pequenas telas: até 320px
+celular: de 320px até 767px
+Tablet: 768px até 1023
+Desrtop: 1024 até 1200
+Grandes telas: acima de 1201
+----------------------------
+*/
+
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+@media print {/* impressão  */
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main h1{
+        text-shadow: none;
+        color: black;
+    }
+    main{
+        border: 2px solid;
+    }
+    main::after{
+        content: "Esse impressão foi feita atravez do saite www.luizpl09.com";
+    }
+    img#telefone{
+        display: none;
+    }
+    img#tablet{
+        display: block;
+    }
+    img#print{
+        display: none;
+    }
+    img#pc{
+        display: none;
+    }
+    img#tv{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){/* Tablet  */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        }
+        img#telefone{
+            display: none;
+        }
+        img#tablet{
+            display: block;
+        }
+        img#print{
+            display: none;
+        }
+        img#pc{
+            display: none;
+        }
+        img#tv{
+            display: none;
+        }
+    }
+@media screen and (min-width: 1024px) and (max-width: 1200px){/*  Desktop */
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+        img#telefone{
+            display: none;
+        }
+        img#tablet{
+            display: none;
+        }
+        img#print{
+            display: none;
+        }
+        img#pc{
+            display: block;
+        }
+        img#tv{
+            display: none;
+        }
+    }
+@media screen and (min-width: 1201px){/* Grandes telas */
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+        img#telefone{
+            display: none;
+        }
+        img#tablet{
+            display: none;
+        }
+        img#print{
+            display: none;
+        }
+        img#pc{
+            display: none;
+        }
+        img#tv{
+            display: block;
+        }
+
+    }
