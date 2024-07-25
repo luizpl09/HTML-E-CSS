@@ -6,10 +6,11 @@
     <title>Media Query</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
-<body>
+<body onresize="MudouTamanho()">
     <header>
-        <h1>Meu saite</h1>
+        <h1>Lei sobre defesa pessoal.</h1>
         <span id="barguer" class="material-symbols-outlined" onclick="clickMenu()">
             Menu
             </span>
@@ -25,15 +26,38 @@
     </header>
     <main>
         <article>
-            <h2>Testando Media Queries</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum alias quis aperiam, quasi dolorem ipsum dignissimos odio possimus dolore provident delectus, saepe architecto, voluptate quibusdam non officiis enim minima molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sint, dignissimos doloribus natus laudantium, quo laborum minima nemo ipsum minus in ratione doloremque, voluptatem totam pariatur quaerat deleniti commodi! Fugiat.</p>
+            <h1>Legítima defesa</h1>
+            <hr>
+            <h2>Doutrina</h2>
+            <p>"Nos termos do art. 25 do Código Penal: 'Entende-se em legítima defesa quem, usando moderadamente dos meios necessários, repele injusta agressão, atual ou iminente, a direito seu ou de outrem'. </p>
+            <p>(...)</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum alias quis aperiam, quasi dolorem ipsum dignissimos odio possimus dolore provident delectus, saepe architecto, voluptate quibusdam non officiis enim minima molestiae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas sint, dignissimos doloribus natus laudantium, quo laborum minima nemo ipsum minus in ratione doloremque, voluptatem totam pariatur quaerat deleniti commodi! Fugiat.</p>
+            <p>Como se extrai do art. 23, II, do Código Penal, a legítima defesa é <strong>causa de exclusão da ilicitude.</strong> Destarte, o fato típico praticado em legítima defesa é lícito. Não configura crime. </p>
+            <p>(...)</p>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, vero magnam maxime quasi magni sapiente, optio consequuntur voluptates rem, praesentium animi modi placeat ut eligendi cum laudantium eveniet mollitia qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nisi et! Minima rerum fuga doloremque fugiat debitis reprehenderit pariatur laudantium distinctio, esse nemo exercitationem optio saepe ullam est magnam sapiente?</p>
+            <p>A análise do art. 25 do Código Penal revela a dependência da legítima defesa aos seguintes requisitos <strong>cumulativos</strong>: (1) agressão injusta; (2) atual ou iminente; (3) direito próprio ou alheio; (4) reação com os meios necessários; e (5) uso moderado dos meios necessários. </p>
+            <p>(...)</p>
+
+            <p><strong>23.4.1. Agressão injusta</strong></p>
+            <p>(...)</p>
+            
+            <p>Trata-se de atividade exclusiva do ser humano.(...).</p>
+
+                <p>Portanto, animais que atacam e coisas que oferecem riscos às pessoas podem ser sacrificados ou danificados com fundamento no estado de necessidade, e não na legítima defesa, reservada a agressões emanadas do homem.</p>
+                
+                <p>Nada impede, entretanto, a utilização de animais como instrumentos do crime, como nos casos em que são ordenados, por alguém, ao ataque de determinada pessoa. Funcionam como verdadeiras armas, autorizando a legítima defesa. Exemplo: 'A' determina ao seu cão bravio o ataque contra 'B'. Esse último poderá matar o animal, acobertado pela legítima defesa. </p>
         </article>
     </main>
     <script>
+
+        function medoouTamanho(){
+            if (window.innerWidth >= 767){
+                intens.style.display = 'block'
+            } else{
+                intens.style.display = 'none'
+            }
+        }
+
         function clickMenu(){
            if (itens.style.display == 'block'){
              itens.style.display = 'none'
