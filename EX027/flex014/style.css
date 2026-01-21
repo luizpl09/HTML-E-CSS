@@ -14,13 +14,13 @@ body{
 main{
     margin: 5px;
 }
-p, h1{
+p{
     margin-bottom: 10px;
-
+    text-align: justify;
 }
 header,section.normal{
     padding: 20px;
-    text-align: justify;
+    
 }
 section.flex-content{
     padding: 20px;
