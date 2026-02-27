@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid layout prática</title>
+    <style>
+        div.container{
+            border: 4px dotted blue;
+            display: grid;
+            grid-template-columns: repeat(3,120px);
+            grid-template-rows: repeat(3,80px);
+            grid-auto-flow: column; 
+            grid-auto-rows: 80px;
+            grid-auto-columns: 120px;
+            gap: 10px;
+            place-items: normal normal;
+            place-content: normal normal;
+        }
+        div.intem{
+            border: 3px dotted red;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="intem">A</div>
+        <div class="intem">B</div>
+        <div class="intem">C</div>
+        <div class="intem">D</div>
+        <div class="intem">E</div>
+        <div class="intem">F</div>
+        <div class="intem">G</div>
+        <div class="intem">h</div>
+        <div class="intem">i</div>
+        <div class="intem">j</div>
+    </div>
+</body>
+</html>
